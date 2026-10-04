@@ -147,12 +147,15 @@
            font-size:11px;color:var(--t3);line-height:1.3;margin-bottom:1px}
   .bdg{display:inline-block;border-radius:var(--r-sm);padding:2px 7px;font-size:12px}
   details{margin-top:26px}
-  summary{font-size:15px;font-weight:500;cursor:pointer;list-style:none;padding:4px 0}
+  summary{font-size:15px;font-weight:500;cursor:pointer;list-style:none;padding:6px 0;
+          color:var(--t1);border-radius:var(--r-sm);transition:background .15s}
+  summary:hover{background:var(--surface-alt)}
   summary::-webkit-details-marker{display:none}
-  summary::before{content:"\25B8";display:inline-block;margin-right:6px;color:var(--t3);
-                  transition:transform .15s ease}
+  summary::before{content:"\25B6";display:inline-block;margin-right:8px;color:#DC2626;
+                  transition:transform .15s ease;font-size:12px}
   details[open] summary::before{transform:rotate(90deg)}
   details table{margin-top:10px}
+  details .panel,details .cap,details .legend{margin-top:10px}
   .foot{margin-top:26px;color:var(--t3);font-size:12px;line-height:1.7}
   .foot b{color:var(--t2);font-weight:500}
   .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
@@ -213,7 +216,8 @@
     已清仓 5 只的已实现损益见下方折叠区。
   </div>
 
-  <h2>加仓距离</h2>
+  <details>
+  <summary>加仓距离</summary>
   <div class="cap"><b>横轴＝持有收益率</b>（全部标的共用，−12% ~ +12%）　
     <b><span style="color:#166534">○</span> 空心＝加仓触发线</b>　<b><span style="color:#B91C1C">●</span> 实心＝历史最高收益率</b>　
     <b>▲＝当前持有收益率</b>　<span style="color:#64748B">┊</span>虚线＝0%（保本）　<b>▼＝R0 基准</b><br>
@@ -242,8 +246,10 @@
     <span class="dot" style="background:#C0392B;margin-left:14px"></span>≥100%（已达阈值，应触发提醒）
     <span class="dot" style="background:#94A3B8;margin-left:14px"></span>R0 已重置（回撤未超过基准，进度归 0）
   </div>
+  </details>
 
-  <h2>配置占比 vs 目标</h2>
+  <details>
+  <summary>配置占比 vs 目标</summary>
   <div class="cap">环形＝实际构成　<b>「核心定投」已含标普500</b>（蓝弧正中插入标普色窄条，两侧仍是蓝＝含在其内）　
     偏离单位为百分点（pp）　<b>标普500 是子项，不占环形图的一块</b></div>
   <div class="panel">
@@ -279,8 +285,10 @@
     色义：<span style="color:#2563EB">欠配</span>　<span style="color:#B45309">超配</span>　
     <span style="color:#64748B">|偏离| ≤ 1 个百分点视为达标</span>（用中性灰，避免与「涨」的绿混淆）
   </div>
+  </details>
 
-  <h2>收益趋势</h2>
+  <details>
+  <summary>收益趋势</summary>
   <div class="cap">数据来源：月度复盘表（每月末更新净值后新增一行）　涨绿跌红　金额单位：元</div>
   <div class="panel trend-panel">
     <div class="trend-row">
@@ -320,8 +328,10 @@
 </svg></div>
     </div>
   </div>
+  </details>
 
-  <h2>持有中（14 只）</h2>
+  <details>
+  <summary>持有中（14 只）</summary>
   <p class="sr-only">按总投入降序排列。窄屏下隐藏分类、净值、份额、净值日四列。</p>
   <table>
     <thead><tr>
@@ -345,6 +355,7 @@
 <tr><td class="nm"><span class="fcode">017641</span>摩根标普500指数QDII）A</td><td class="col-cat">标普</td><td class="num col-nav">1.6974</td><td class="num col-sh">17.60</td><td class="num">30.00</td><td class="num">29.87</td><td class="num"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-0.13</span></td><td class="num"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-0.42%</span></td><td class="num col-date">2026-09-29</td></tr>
     </tbody>
   </table>
+  </details>
 
   <details>
     <summary>已清仓（5 只，保留查看已实现收益）</summary>
@@ -372,7 +383,7 @@
   </details>
 
   <div class="foot">
-    <b>涨＝浅绿底＋深绿字，跌＝浅红底＋深红字</b>（个人习惯，与 A 股「涨红跌绿」相反）｜金额单位：人民币元｜生成时间 2026-10-03 23:55<br>
+    <b>涨＝浅绿底＋深绿字，跌＝浅红底＋深红字</b>（个人习惯，与 A 股「涨红跌绿」相反）｜金额单位：人民币元｜生成时间 2026-10-04 13:21<br>
     本快照为账面数据，非交易确认值；净值以基金公司公布为准，不构成买卖建议。
   </div>
 </div>
