@@ -5,7 +5,7 @@
 <meta name="robots" content="noindex,nofollow,noarchive">
 <meta name="referrer" content="no-referrer">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>投资管理表快照 2026-10-13</title>
+<title>投资管理表快照 2026-10-14</title>
 <link rel="icon" href="favicon.ico">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="manifest.json">
@@ -80,10 +80,10 @@
   .ddr0{position:absolute;top:0;width:0;height:0;
         border-left:5px solid transparent;border-right:5px solid transparent;
         border-top:8px solid #10151C;transform:translateX(-50%)}
-  /* ▲ 当前持有收益率（涨绿跌红，个人习惯） */
+  /* ▲ 当前持有收益率（绿跌红涨，A股习惯；实际色由 inline jcol 覆盖） */
   .ddtri{position:absolute;top:18px;width:0;height:0;
          border-left:5px solid transparent;border-right:5px solid transparent;
-         border-bottom:7px solid #B91C1C;transform:translateX(-50%)}
+         border-bottom:7px solid #64748B;transform:translateX(-50%)}
   /* 0% 保本线：用**虚线**（语义是参考线，不是阈值线）。轨道内一段 + 行间补齐段串成贯穿线。
      ⚠️ 补齐段高度 = 行距 − 轨高；改 --dd-pitch 或 --ddtrack-h 时必须同步看这里 */
   .ddz{position:absolute;top:0;width:0;height:var(--ddtrack-h);
@@ -239,21 +239,21 @@
 
   <header class="hd">
     <h1>投资管理表快照</h1>
-    <span class="meta">数据日期 2026-10-13</span>
+    <span class="meta">数据日期 2026-10-14</span>
     <span class="chip">13 只在持 · 7 只已清仓</span>
   </header>
   <div class="hdsub">部分基金净值更早，QDII 有 T+2 延迟｜来源：投资管理表模板.xlsx</div>
 
   <div class="cards">
     <div class="c"><div class="l">持有投入</div><div class="v">¥7,486.24</div><div class="s">13 只在持</div></div>
-    <div class="c"><div class="l">当前市值</div><div class="v">¥7,306.23</div></div>
-    <div class="c"><div class="l">持有浮盈亏</div><div class="v" style="color:#B91C1C">-¥180.01</div><div class="s">-2.40%</div></div>
-    <div class="c"><div class="l">累计总收益</div><div class="v" style="color:#B91C1C">-¥407.56</div><div class="s">持有＋已清仓</div></div>
+    <div class="c"><div class="l">当前市值</div><div class="v">¥7,258.87</div></div>
+    <div class="c"><div class="l">持有浮盈亏</div><div class="v" style="color:#166534">-¥227.37</div><div class="s">-3.04%</div></div>
+    <div class="c"><div class="l">累计总收益</div><div class="v" style="color:#166534">-¥454.92</div><div class="s">持有＋已清仓</div></div>
   </div>
 
   <div class="note">
     <b>口径说明</b>：表格「基金持仓表」合计行 I53 的公式是 <code>=SUM(I3:I52)+SUM(N3:N52)</code>，
-    即<b>持有浮盈亏 + 已清仓收益 = 累计总收益</b>（-¥407.56）。当前持有的浮亏为 -¥180.01（-2.40%），
+    即<b>持有浮盈亏 + 已清仓收益 = 累计总收益</b>（-¥454.92）。当前持有的浮亏为 -¥227.37（-3.04%），
     已清仓 7 只的已实现损益见下方折叠区。
   </div>
 
@@ -267,16 +267,16 @@
     右列＝结论　① 加仓还差 x.xxpp　② 止盈　③ 当前收益率　
     <b>⚠️ ①②量纲不同，不可相加</b></div>
   <div class="panel" role="img" aria-label="加仓距离图，横轴为持有收益率，按进度降序排列，共 10 只">
-<div class="ddrow"><div class="ddnm"><div class="n" title="建信医疗健康行业股票A">建信医疗健康行业股票A</div><div class="s">008923 · 回撤 7.76 → 14.20</div></div><div class="ddstack"><div class="ddtrack"><span class="ddspan" style="left:18.26%;width:35.50%"></span><span class="ddfill" style="left:34.36%;width:19.40%;background:#2563EB"></span><span class="dddot o" style="left:53.76%"></span><span class="ddmk" style="left:18.26%"></span><span class="ddtri" style="left:34.36%;border-bottom-color:#B91C1C"></span><span class="ddr0" style="left:43.26%"></span><span class="ddz" style="left:50.00%"></span><span class="ddz2" style="left:50.00%"></span></div></div><div class="ddval"><span class="ln" style="color:#2563EB">加仓 还差 <b>6.44pp</b></span><span class="ln" style="color:#64748B" title="止盈点 30%（持有收益率 J），当前 -6.26% → 还差 36.26 个百分点。达到止盈点且持有满 180 天才进入止盈区；表 B 档位（按回撤跟踪，非收益率）：第1档 10%卖1/3，第2档 15%卖1/3，第3档 20%卖清仓；已提醒档位 0">止盈 还差 36.26pp</span><span class="ln" style="color:#B91C1C">-6.26%</span></div></div>
-<div class="ddrow"><div class="ddnm"><div class="n" title="易方达中证银行ETF联接（LOF）A">易方达中证银行ETF联接（LOF）A</div><div class="s">161121 · 回撤 0.46 → 5.00</div></div><div class="ddstack"><div class="ddtrack"><span class="ddspan" style="left:46.14%;width:12.50%"></span><span class="ddfill" style="left:57.48%;width:1.16%;background:#2563EB"></span><span class="dddot o" style="left:58.64%"></span><span class="ddmk" style="left:46.14%"></span><span class="ddtri" style="left:57.48%;border-bottom-color:#166534"></span><span class="ddz" style="left:50.00%"></span><span class="ddz2" style="left:50.00%"></span></div></div><div class="ddval"><span class="ln" style="color:#2563EB">加仓 还差 <b>4.54pp</b></span><span class="ln" style="color:#64748B" title="止盈点 15%（持有收益率 J），当前 +2.99% → 还差 12.01 个百分点。达到止盈点且持有满 180 天才进入止盈区；表 B 档位（按回撤跟踪，非收益率）：第1档 10%卖1/2，第2档 15%卖清仓；已提醒档位 0">止盈 还差 12.01pp</span><span class="ln" style="color:#166534">+2.99%</span></div></div>
-<div class="ddrow"><div class="ddnm"><div class="n" title="华夏中证红利质量ETF联接A">华夏中证红利质量ETF联接A</div><div class="s">016440 · 回撤 2.89 → 7.45</div></div><div class="ddstack"><div class="ddtrack"><span class="ddspan" style="left:33.03%;width:18.62%"></span><span class="ddfill" style="left:44.42%;width:7.23%;background:#2563EB"></span><span class="dddot o" style="left:51.65%"></span><span class="ddmk" style="left:33.03%"></span><span class="ddtri" style="left:44.42%;border-bottom-color:#B91C1C"></span><span class="ddr0" style="left:45.53%"></span><span class="ddz" style="left:50.00%"></span><span class="ddz2" style="left:50.00%"></span></div></div><div class="ddval"><span class="ln" style="color:#2563EB">加仓 还差 <b>4.56pp</b></span><span class="ln" style="color:#64748B" title="止盈点 10%（持有收益率 J），当前 -2.23% → 还差 12.23 个百分点。达到止盈点且持有满 180 天才进入止盈区；表 B 档位（按回撤跟踪，非收益率）：第1档 6%卖1/4，第2档 10%卖1/4，第3档 15%卖清仓；已提醒档位 0">止盈 还差 12.23pp</span><span class="ln" style="color:#B91C1C">-2.23%</span></div></div>
-<div class="ddrow"><div class="ddnm"><div class="n" title="易方达资源行业混合">易方达资源行业混合</div><div class="s">110025 · 回撤 2.81 → 12.81</div></div><div class="ddstack"><div class="ddtrack"><span class="ddspan" style="left:19.04%;width:32.03%"></span><span class="ddfill" style="left:44.04%;width:7.03%;background:#2563EB"></span><span class="dddot o" style="left:51.07%"></span><span class="ddmk" style="left:19.04%"></span><span class="ddtri" style="left:44.04%;border-bottom-color:#B91C1C"></span><span class="ddr0" style="left:44.04%"></span><span class="ddz" style="left:50.00%"></span><span class="ddz2" style="left:50.00%"></span></div></div><div class="ddval"><span class="ln" style="color:#2563EB">加仓 还差 <b>10.00pp</b></span><span class="ln" style="color:#64748B" title="止盈点 25%（持有收益率 J），当前 -2.38% → 还差 27.38 个百分点。达到止盈点且持有满 180 天才进入止盈区；表 B 档位（按回撤跟踪，非收益率）：第1档 8%卖1/2，第2档 12%卖清仓；已提醒档位 0">止盈 还差 27.38pp</span><span class="ln" style="color:#B91C1C">-2.38%</span></div></div>
-<div class="ddrow"><div class="ddnm"><div class="n" class="muted" title="博道中证A500指数增强A">博道中证A500指数增强A</div><div class="s">022745 · <b>基准已重置 R0 0.04</b> · 触发线 7.04</div></div><div class="ddstack"><div class="ddtrack"><span class="ddspan" style="left:32.10%;width:17.60%"></span><span class="ddfill" style="left:49.60%;width:0.60%;background:#94A3B8"></span><span class="dddot o" style="left:49.70%"></span><span class="ddmk" style="left:32.10%"></span><span class="ddtri" style="left:49.60%;border-bottom-color:#B91C1C"></span><span class="ddr0" style="left:49.60%"></span><span class="ddz" style="left:50.00%"></span><span class="ddz2" style="left:50.00%"></span></div></div><div class="ddval"><span class="ln" style="color:#64748B">加仓 还差 <b>7.00pp</b></span><span class="ln" style="color:#64748B" title="止盈点 12%（持有收益率 J），当前 -0.16% → 还差 12.16 个百分点。达到止盈点且持有满 180 天才进入止盈区；表 B 档位（按回撤跟踪，非收益率）：第1档 8%卖1/4，第2档 12%卖1/4，第3档 18%卖清仓；已提醒档位 0">止盈 还差 12.16pp</span><span class="ln" style="color:#B91C1C">-0.16%</span></div></div>
-<div class="ddrow"><div class="ddnm"><div class="n" class="muted" title="易方达国防军工混合A">易方达国防军工混合A</div><div class="s">001475 · <b>基准已重置 R0 5.85</b> · 触发线 15.85</div></div><div class="ddstack"><div class="ddtrack"><span class="ddspan" style="left:6.87%;width:39.63%"></span><span class="ddfill" style="left:31.87%;width:14.62%;background:#94A3B8"></span><span class="dddot o" style="left:46.49%"></span><span class="ddmk" style="left:6.87%"></span><span class="ddtri" style="left:31.87%;border-bottom-color:#B91C1C"></span><span class="ddr0" style="left:31.87%"></span><span class="ddz" style="left:50.00%"></span><span class="ddz2" style="left:50.00%"></span></div></div><div class="ddval"><span class="ln" style="color:#64748B">加仓 还差 <b>10.00pp</b></span><span class="ln" style="color:#64748B" title="止盈点 20%（持有收益率 J），当前 -7.25% → 还差 27.25 个百分点。达到止盈点且持有满 180 天才进入止盈区；表 B 档位（按回撤跟踪，非收益率）：第1档 8%卖1/2，第2档 12%卖清仓；已提醒档位 0">止盈 还差 27.25pp</span><span class="ln" style="color:#B91C1C">-7.25%</span></div></div>
-<div class="ddrow"><div class="ddnm"><div class="n" class="muted" title="汇添富中证主要消费ETF联接A">汇添富中证主要消费ETF联接A</div><div class="s">000248 · <b>基准已重置 R0 3.13</b> · 触发线 11.13</div></div><div class="ddstack"><div class="ddtrack"><span class="ddspan" style="left:25.56%;width:27.83%"></span><span class="ddfill" style="left:46.66%;width:6.73%;background:#94A3B8"></span><span class="dddot o" style="left:53.39%"></span><span class="ddmk" style="left:25.56%"></span><span class="ddtri" style="left:46.66%;border-bottom-color:#B91C1C"></span><span class="ddr0" style="left:45.56%"></span><span class="ddz" style="left:50.00%"></span><span class="ddz2" style="left:50.00%"></span></div></div><div class="ddval"><span class="ln" style="color:#64748B">加仓 还差 <b>8.44pp</b></span><span class="ln" style="color:#64748B" title="止盈点 25%（持有收益率 J），当前 -1.34% → 还差 26.34 个百分点。达到止盈点且持有满 180 天才进入止盈区；表 B 档位（按回撤跟踪，非收益率）：第1档 10%卖1/3，第2档 15%卖1/3，第3档 20%卖清仓；已提醒档位 0">止盈 还差 26.34pp</span><span class="ln" style="color:#B91C1C">-1.34%</span></div></div>
-<div class="ddrow"><div class="ddnm"><div class="n" class="muted" title="标普500">标普500</div><div class="s">3只合并 · <b>基准已重置 R0 0.50</b> · 触发线 5.50</div></div><div class="ddstack"><div class="ddtrack"><span class="ddspan" style="left:39.75%;width:13.75%"></span><span class="ddfill" style="left:53.30%;width:0.60%;background:#94A3B8"></span><span class="dddot o" style="left:53.50%"></span><span class="ddmk" style="left:39.75%"></span><span class="ddtri" style="left:53.30%;border-bottom-color:#166534"></span><span class="ddr0" style="left:52.25%"></span><span class="ddz" style="left:50.00%"></span><span class="ddz2" style="left:50.00%"></span></div></div><div class="ddval"><span class="ln" style="color:#64748B">加仓 还差 <b>5.42pp</b></span><span class="ln" style="color:#64748B" title="止盈点 30%（持有收益率 J），当前 +1.32% → 还差 28.68 个百分点。达到止盈点且持有满 180 天才进入止盈区；表 B 档位（按回撤跟踪，非收益率）：第1档 15%卖1/4，第2档 25%卖1/4，第3档 35%卖清仓；已提醒档位 0">止盈 还差 28.68pp</span><span class="ln" style="color:#166534">+1.32%</span></div></div>
-<div class="ddrow"><div class="ddnm"><div class="n" class="muted" title="易方达恒生科技ETF联接（QDII）A">易方达恒生科技ETF联接（QDII）A</div><div class="s">013308 · <b>基准已重置 R0 5.68</b> · 触发线 17.68</div></div><div class="ddstack"><div class="ddtrack"><span class="ddspan" style="left:9.29%;width:44.20%"></span><span class="ddfill" style="left:42.41%;width:11.08%;background:#94A3B8"></span><span class="dddot o" style="left:53.49%"></span><span class="ddmk" style="left:9.29%"></span><span class="ddtri" style="left:42.41%;border-bottom-color:#B91C1C"></span><span class="ddr0" style="left:39.29%"></span><span class="ddz" style="left:50.00%"></span><span class="ddz2" style="left:50.00%"></span></div></div><div class="ddval"><span class="ln" style="color:#64748B">加仓 还差 <b>13.25pp</b></span><span class="ln" style="color:#64748B" title="止盈点 35%（持有收益率 J），当前 -3.03% → 还差 38.03 个百分点。达到止盈点且持有满 180 天才进入止盈区；表 B 档位（按回撤跟踪，非收益率）：第1档 15%卖1/3，第2档 20%卖1/3，第3档 25%卖清仓；已提醒档位 0">止盈 还差 38.03pp</span><span class="ln" style="color:#B91C1C">-3.03%</span></div></div>
-<div class="ddrow"><div class="ddnm"><div class="n" class="muted" title="华安黄金ETF联接A">华安黄金ETF联接A</div><div class="s">000216 · <b>基准已重置 R0 5.01</b> · 触发线 10.01</div></div><div class="ddstack"><div class="ddtrack"><span class="ddspan" style="left:28.29%;width:25.03%"></span><span class="ddfill" style="left:43.89%;width:9.43%;background:#94A3B8"></span><span class="dddot o" style="left:53.32%"></span><span class="ddmk" style="left:28.29%"></span><span class="ddtri" style="left:43.89%;border-bottom-color:#B91C1C"></span><span class="ddr0" style="left:40.79%"></span><span class="ddz" style="left:50.00%"></span><span class="ddz2" style="left:50.00%"></span></div></div><div class="ddval"><span class="ln" style="color:#64748B">加仓 还差 <b>6.24pp</b></span><span class="ln" style="color:#64748B" title="止盈点 15%（持有收益率 J），当前 -2.44% → 还差 17.44 个百分点。达到止盈点且持有满 180 天才进入止盈区；表 B 档位（按回撤跟踪，非收益率）：第1档 8%卖1/4，第2档 12%卖1/4，第3档 18%卖清仓；已提醒档位 0">止盈 还差 17.44pp</span><span class="ln" style="color:#B91C1C">-2.44%</span></div></div>
+<div class="ddrow"><div class="ddnm"><div class="n" title="建信医疗健康行业股票A">建信医疗健康行业股票A</div><div class="s">008923 · 回撤 9.38 → 14.20</div></div><div class="ddstack"><div class="ddtrack"><span class="ddspan" style="left:18.26%;width:35.50%"></span><span class="ddfill" style="left:30.31%;width:23.45%;background:#2563EB"></span><span class="dddot o" style="left:53.76%"></span><span class="ddmk" style="left:18.26%"></span><span class="ddtri" style="left:30.31%;border-bottom-color:#166534"></span><span class="ddr0" style="left:43.26%"></span><span class="ddz" style="left:50.00%"></span><span class="ddz2" style="left:50.00%"></span></div></div><div class="ddval"><span class="ln" style="color:#2563EB">加仓 还差 <b>4.82pp</b></span><span class="ln" style="color:#64748B" title="止盈点 30%（持有收益率 J），当前 -7.88% → 还差 37.88 个百分点。达到止盈点且持有满 180 天才进入止盈区；表 B 档位（按回撤跟踪，非收益率）：第1档 10%卖1/3，第2档 15%卖1/3，第3档 20%卖清仓；已提醒档位 0">止盈 还差 37.88pp</span><span class="ln" style="color:#166534">-7.88%</span></div></div>
+<div class="ddrow"><div class="ddnm"><div class="n" title="博道中证A500指数增强A">博道中证A500指数增强A</div><div class="s">022745 · 回撤 1.61 → 7.04</div></div><div class="ddstack"><div class="ddtrack"><span class="ddspan" style="left:32.10%;width:17.60%"></span><span class="ddfill" style="left:45.66%;width:4.04%;background:#2563EB"></span><span class="dddot o" style="left:49.70%"></span><span class="ddmk" style="left:32.10%"></span><span class="ddtri" style="left:45.66%;border-bottom-color:#166534"></span><span class="ddr0" style="left:49.60%"></span><span class="ddz" style="left:50.00%"></span><span class="ddz2" style="left:50.00%"></span></div></div><div class="ddval"><span class="ln" style="color:#2563EB">加仓 还差 <b>5.43pp</b></span><span class="ln" style="color:#64748B" title="止盈点 12%（持有收益率 J），当前 -1.73% → 还差 13.73 个百分点。达到止盈点且持有满 180 天才进入止盈区；表 B 档位（按回撤跟踪，非收益率）：第1档 8%卖1/4，第2档 12%卖1/4，第3档 18%卖清仓；已提醒档位 0">止盈 还差 13.73pp</span><span class="ln" style="color:#166534">-1.73%</span></div></div>
+<div class="ddrow"><div class="ddnm"><div class="n" title="易方达资源行业混合">易方达资源行业混合</div><div class="s">110025 · 回撤 4.12 → 12.81</div></div><div class="ddstack"><div class="ddtrack"><span class="ddspan" style="left:19.04%;width:32.02%"></span><span class="ddfill" style="left:40.77%;width:10.30%;background:#2563EB"></span><span class="dddot o" style="left:51.07%"></span><span class="ddmk" style="left:19.04%"></span><span class="ddtri" style="left:40.77%;border-bottom-color:#166534"></span><span class="ddr0" style="left:44.04%"></span><span class="ddz" style="left:50.00%"></span><span class="ddz2" style="left:50.00%"></span></div></div><div class="ddval"><span class="ln" style="color:#2563EB">加仓 还差 <b>8.69pp</b></span><span class="ln" style="color:#64748B" title="止盈点 25%（持有收益率 J），当前 -3.69% → 还差 28.69 个百分点。达到止盈点且持有满 180 天才进入止盈区；表 B 档位（按回撤跟踪，非收益率）：第1档 8%卖1/2，第2档 12%卖清仓；已提醒档位 0">止盈 还差 28.69pp</span><span class="ln" style="color:#166534">-3.69%</span></div></div>
+<div class="ddrow"><div class="ddnm"><div class="n" title="华夏中证红利质量ETF联接A">华夏中证红利质量ETF联接A</div><div class="s">016440 · 回撤 3.08 → 7.45</div></div><div class="ddstack"><div class="ddtrack"><span class="ddspan" style="left:33.03%;width:18.62%"></span><span class="ddfill" style="left:43.96%;width:7.70%;background:#2563EB"></span><span class="dddot o" style="left:51.65%"></span><span class="ddmk" style="left:33.03%"></span><span class="ddtri" style="left:43.96%;border-bottom-color:#166534"></span><span class="ddr0" style="left:45.53%"></span><span class="ddz" style="left:50.00%"></span><span class="ddz2" style="left:50.00%"></span></div></div><div class="ddval"><span class="ln" style="color:#2563EB">加仓 还差 <b>4.37pp</b></span><span class="ln" style="color:#64748B" title="止盈点 10%（持有收益率 J），当前 -2.42% → 还差 12.42 个百分点。达到止盈点且持有满 180 天才进入止盈区；表 B 档位（按回撤跟踪，非收益率）：第1档 6%卖1/4，第2档 10%卖1/4，第3档 15%卖清仓；已提醒档位 0">止盈 还差 12.42pp</span><span class="ln" style="color:#166534">-2.42%</span></div></div>
+<div class="ddrow"><div class="ddnm"><div class="n" title="易方达中证银行ETF联接（LOF）A">易方达中证银行ETF联接（LOF）A</div><div class="s">161121 · 回撤 0.59 → 5.00</div></div><div class="ddstack"><div class="ddtrack"><span class="ddspan" style="left:46.14%;width:12.50%"></span><span class="ddfill" style="left:57.17%;width:1.47%;background:#2563EB"></span><span class="dddot o" style="left:58.64%"></span><span class="ddmk" style="left:46.14%"></span><span class="ddtri" style="left:57.17%;border-bottom-color:#B91C1C"></span><span class="ddz" style="left:50.00%"></span><span class="ddz2" style="left:50.00%"></span></div></div><div class="ddval"><span class="ln" style="color:#2563EB">加仓 还差 <b>4.41pp</b></span><span class="ln" style="color:#64748B" title="止盈点 15%（持有收益率 J），当前 +2.87% → 还差 12.13 个百分点。达到止盈点且持有满 180 天才进入止盈区；表 B 档位（按回撤跟踪，非收益率）：第1档 10%卖1/2，第2档 15%卖清仓；已提醒档位 0">止盈 还差 12.13pp</span><span class="ln" style="color:#B91C1C">+2.87%</span></div></div>
+<div class="ddrow"><div class="ddnm"><div class="n" title="易方达国防军工混合A">易方达国防军工混合A</div><div class="s">001475 · 回撤 6.71 → 15.85</div></div><div class="ddstack"><div class="ddtrack"><span class="ddspan" style="left:6.87%;width:39.63%"></span><span class="ddfill" style="left:29.71%;width:16.79%;background:#2563EB"></span><span class="dddot o" style="left:46.49%"></span><span class="ddmk" style="left:6.87%"></span><span class="ddtri" style="left:29.71%;border-bottom-color:#166534"></span><span class="ddr0" style="left:31.87%"></span><span class="ddz" style="left:50.00%"></span><span class="ddz2" style="left:50.00%"></span></div></div><div class="ddval"><span class="ln" style="color:#2563EB">加仓 还差 <b>9.14pp</b></span><span class="ln" style="color:#64748B" title="止盈点 20%（持有收益率 J），当前 -8.12% → 还差 28.12 个百分点。达到止盈点且持有满 180 天才进入止盈区；表 B 档位（按回撤跟踪，非收益率）：第1档 8%卖1/2，第2档 12%卖清仓；已提醒档位 0">止盈 还差 28.12pp</span><span class="ln" style="color:#166534">-8.12%</span></div></div>
+<div class="ddrow"><div class="ddnm"><div class="n" class="muted" title="华安黄金ETF联接A">华安黄金ETF联接A</div><div class="s">000216 · <b>基准已重置 R0 5.01</b> · 触发线 10.01</div></div><div class="ddstack"><div class="ddtrack"><span class="ddspan" style="left:28.29%;width:25.03%"></span><span class="ddfill" style="left:41.35%;width:11.97%;background:#94A3B8"></span><span class="dddot o" style="left:53.32%"></span><span class="ddmk" style="left:28.29%"></span><span class="ddtri" style="left:41.35%;border-bottom-color:#166534"></span><span class="ddr0" style="left:40.79%"></span><span class="ddz" style="left:50.00%"></span><span class="ddz2" style="left:50.00%"></span></div></div><div class="ddval"><span class="ln" style="color:#64748B">加仓 还差 <b>5.22pp</b></span><span class="ln" style="color:#64748B" title="止盈点 15%（持有收益率 J），当前 -3.46% → 还差 18.46 个百分点。达到止盈点且持有满 180 天才进入止盈区；表 B 档位（按回撤跟踪，非收益率）：第1档 8%卖1/4，第2档 12%卖1/4，第3档 18%卖清仓；已提醒档位 0">止盈 还差 18.46pp</span><span class="ln" style="color:#166534">-3.46%</span></div></div>
+<div class="ddrow"><div class="ddnm"><div class="n" class="muted" title="标普500">标普500</div><div class="s">3只合并 · <b>基准已重置 R0 0.50</b> · 触发线 5.50</div></div><div class="ddstack"><div class="ddtrack"><span class="ddspan" style="left:39.75%;width:13.75%"></span><span class="ddfill" style="left:53.24%;width:0.60%;background:#94A3B8"></span><span class="dddot o" style="left:53.50%"></span><span class="ddmk" style="left:39.75%"></span><span class="ddtri" style="left:53.24%;border-bottom-color:#B91C1C"></span><span class="ddr0" style="left:52.25%"></span><span class="ddz" style="left:50.00%"></span><span class="ddz2" style="left:50.00%"></span></div></div><div class="ddval"><span class="ln" style="color:#64748B">加仓 还差 <b>5.39pp</b></span><span class="ln" style="color:#64748B" title="止盈点 30%（持有收益率 J），当前 +1.30% → 还差 28.70 个百分点。达到止盈点且持有满 180 天才进入止盈区；表 B 档位（按回撤跟踪，非收益率）：第1档 15%卖1/4，第2档 25%卖1/4，第3档 35%卖清仓；已提醒档位 0">止盈 还差 28.70pp</span><span class="ln" style="color:#B91C1C">+1.30%</span></div></div>
+<div class="ddrow"><div class="ddnm"><div class="n" class="muted" title="汇添富中证主要消费ETF联接A">汇添富中证主要消费ETF联接A</div><div class="s">000248 · <b>基准已重置 R0 3.13</b> · 触发线 11.13</div></div><div class="ddstack"><div class="ddtrack"><span class="ddspan" style="left:25.56%;width:27.83%"></span><span class="ddfill" style="left:47.26%;width:6.13%;background:#94A3B8"></span><span class="dddot o" style="left:53.39%"></span><span class="ddmk" style="left:25.56%"></span><span class="ddtri" style="left:47.26%;border-bottom-color:#166534"></span><span class="ddr0" style="left:45.56%"></span><span class="ddz" style="left:50.00%"></span><span class="ddz2" style="left:50.00%"></span></div></div><div class="ddval"><span class="ln" style="color:#64748B">加仓 还差 <b>8.68pp</b></span><span class="ln" style="color:#64748B" title="止盈点 25%（持有收益率 J），当前 -1.10% → 还差 26.10 个百分点。达到止盈点且持有满 180 天才进入止盈区；表 B 档位（按回撤跟踪，非收益率）：第1档 10%卖1/3，第2档 15%卖1/3，第3档 20%卖清仓；已提醒档位 0">止盈 还差 26.10pp</span><span class="ln" style="color:#166534">-1.10%</span></div></div>
+<div class="ddrow"><div class="ddnm"><div class="n" class="muted" title="易方达恒生科技ETF联接（QDII）A">易方达恒生科技ETF联接（QDII）A</div><div class="s">013308 · <b>基准已重置 R0 5.68</b> · 触发线 17.68</div></div><div class="ddstack"><div class="ddtrack"><span class="ddspan" style="left:9.29%;width:44.20%"></span><span class="ddfill" style="left:44.34%;width:9.15%;background:#94A3B8"></span><span class="dddot o" style="left:53.49%"></span><span class="ddmk" style="left:9.29%"></span><span class="ddtri" style="left:44.34%;border-bottom-color:#166534"></span><span class="ddr0" style="left:39.29%"></span><span class="ddz" style="left:50.00%"></span><span class="ddz2" style="left:50.00%"></span></div></div><div class="ddval"><span class="ln" style="color:#64748B">加仓 还差 <b>14.02pp</b></span><span class="ln" style="color:#64748B" title="止盈点 35%（持有收益率 J），当前 -2.26% → 还差 37.26 个百分点。达到止盈点且持有满 180 天才进入止盈区；表 B 档位（按回撤跟踪，非收益率）：第1档 15%卖1/3，第2档 20%卖1/3，第3档 25%卖清仓；已提醒档位 0">止盈 还差 37.26pp</span><span class="ln" style="color:#166534">-2.26%</span></div></div>
 <div class="ddrow ddaxis"><div class="ddnm"></div><div class="ddstack"><div class="ddtrack"><span class="axt" style="left:0.00%">-20%</span><span class="axt" style="left:12.50%">-15%</span><span class="axt" style="left:25.00%">-10%</span><span class="axt" style="left:37.50%">-5%</span><span class="axt" style="left:50.00%">0%</span><span class="axt" style="left:62.50%">5%</span><span class="axt" style="left:75.00%">10%</span><span class="axt" style="left:87.50%">15%</span><span class="axt" style="left:100.00%">20%</span></div></div><div class="ddval"></div></div>
   </div>
   <div class="legend">
@@ -293,17 +293,17 @@
     偏离单位为百分点（pp）　<b>标普500 是子项，不占环形图的一块</b></div>
   <div class="panel">
     <div class="alloc">
-      <svg viewBox="0 0 180 180" width="180" height="180" role="img" class="dough"><title>实际资产配置构成</title><desc>共 11 个顶层大类；「核心定投」一段的正中间用标普500 的颜色标出其内部子项所占的窄条，两侧仍是核心定投的颜色，表示该子项包含在其内。</desc><circle cx="90" cy="90" r="62" fill="none" stroke="#185FA5" stroke-width="26" stroke-dasharray="64.06 389.56" stroke-dashoffset="0.00" transform="rotate(-90 90 90)"/>
-<circle cx="90" cy="90" r="62" fill="none" stroke="#7F77DD" stroke-width="26" stroke-dasharray="2.32 389.56" stroke-dashoffset="-64.06" transform="rotate(-90 90 90)"/>
-<circle cx="90" cy="90" r="62" fill="none" stroke="#1D9E75" stroke-width="26" stroke-dasharray="0.00 389.56" stroke-dashoffset="-66.38" transform="rotate(-90 90 90)"/>
-<circle cx="90" cy="90" r="62" fill="none" stroke="#0F6E56" stroke-width="26" stroke-dasharray="49.89 389.56" stroke-dashoffset="-66.38" transform="rotate(-90 90 90)"/>
-<circle cx="90" cy="90" r="62" fill="none" stroke="#BA7517" stroke-width="26" stroke-dasharray="40.26 389.56" stroke-dashoffset="-116.27" transform="rotate(-90 90 90)"/>
-<circle cx="90" cy="90" r="62" fill="none" stroke="#B4B2A9" stroke-width="26" stroke-dasharray="29.51 389.56" stroke-dashoffset="-156.53" transform="rotate(-90 90 90)"/>
-<circle cx="90" cy="90" r="62" fill="none" stroke="#D4537E" stroke-width="26" stroke-dasharray="19.41 389.56" stroke-dashoffset="-186.04" transform="rotate(-90 90 90)"/>
-<circle cx="90" cy="90" r="62" fill="none" stroke="#185FA5" stroke-width="26" stroke-dasharray="115.63 389.56" stroke-dashoffset="-205.45" transform="rotate(-90 90 90)"/>
-<circle cx="90" cy="90" r="62" fill="none" stroke="#7F77DD" stroke-width="26" stroke-dasharray="31.28 389.56" stroke-dashoffset="-321.08" transform="rotate(-90 90 90)"/>
-<circle cx="90" cy="90" r="62" fill="none" stroke="#1D9E75" stroke-width="26" stroke-dasharray="21.65 389.56" stroke-dashoffset="-352.36" transform="rotate(-90 90 90)"/>
-<circle cx="90" cy="90" r="62" fill="none" stroke="#0F6E56" stroke-width="26" stroke-dasharray="15.54 389.56" stroke-dashoffset="-374.01" transform="rotate(-90 90 90)"/><text x="90" y="86" font-size="11" text-anchor="middle" fill="#64748B">实际配置</text><text x="90" y="106" font-size="16" font-weight="500" text-anchor="middle" fill="#0F172A">100%</text></svg>
+      <svg viewBox="0 0 180 180" width="180" height="180" role="img" class="dough"><title>实际资产配置构成</title><desc>共 11 个顶层大类；「核心定投」一段的正中间用标普500 的颜色标出其内部子项所占的窄条，两侧仍是核心定投的颜色，表示该子项包含在其内。</desc><circle cx="90" cy="90" r="62" fill="none" stroke="#185FA5" stroke-width="26" stroke-dasharray="64.42 389.56" stroke-dashoffset="0.00" transform="rotate(-90 90 90)"/>
+<circle cx="90" cy="90" r="62" fill="none" stroke="#7F77DD" stroke-width="26" stroke-dasharray="2.33 389.56" stroke-dashoffset="-64.42" transform="rotate(-90 90 90)"/>
+<circle cx="90" cy="90" r="62" fill="none" stroke="#1D9E75" stroke-width="26" stroke-dasharray="0.00 389.56" stroke-dashoffset="-66.75" transform="rotate(-90 90 90)"/>
+<circle cx="90" cy="90" r="62" fill="none" stroke="#0F6E56" stroke-width="26" stroke-dasharray="49.38 389.56" stroke-dashoffset="-66.75" transform="rotate(-90 90 90)"/>
+<circle cx="90" cy="90" r="62" fill="none" stroke="#BA7517" stroke-width="26" stroke-dasharray="40.41 389.56" stroke-dashoffset="-116.13" transform="rotate(-90 90 90)"/>
+<circle cx="90" cy="90" r="62" fill="none" stroke="#B4B2A9" stroke-width="26" stroke-dasharray="29.16 389.56" stroke-dashoffset="-156.54" transform="rotate(-90 90 90)"/>
+<circle cx="90" cy="90" r="62" fill="none" stroke="#D4537E" stroke-width="26" stroke-dasharray="19.57 389.56" stroke-dashoffset="-185.70" transform="rotate(-90 90 90)"/>
+<circle cx="90" cy="90" r="62" fill="none" stroke="#185FA5" stroke-width="26" stroke-dasharray="115.54 389.56" stroke-dashoffset="-205.27" transform="rotate(-90 90 90)"/>
+<circle cx="90" cy="90" r="62" fill="none" stroke="#7F77DD" stroke-width="26" stroke-dasharray="31.70 389.56" stroke-dashoffset="-320.80" transform="rotate(-90 90 90)"/>
+<circle cx="90" cy="90" r="62" fill="none" stroke="#1D9E75" stroke-width="26" stroke-dasharray="21.54 389.56" stroke-dashoffset="-352.51" transform="rotate(-90 90 90)"/>
+<circle cx="90" cy="90" r="62" fill="none" stroke="#0F6E56" stroke-width="26" stroke-dasharray="15.51 389.56" stroke-dashoffset="-374.05" transform="rotate(-90 90 90)"/><text x="90" y="86" font-size="11" text-anchor="middle" fill="#64748B">实际配置</text><text x="90" y="106" font-size="16" font-weight="500" text-anchor="middle" fill="#0F172A">100%</text></svg>
       <div class="lgs">
         <div class="lghd">
           <span class="sw"></span>
@@ -312,16 +312,16 @@
           <span class="dv">偏离</span>
           <span class="bx">欠配 ← → 超配</span>
         </div>
-<div class="lgrow"><span class="sw" style="background:#185FA5"></span><span class="nm">灵活储蓄</span><span class="ac">16.4%</span><span class="dv" style="color:#2563EB">-3.6pp</span><span class="bx"><span class="axis"></span><span class="mb" style="right:50%;width:8.1px;background:#2563EB"></span></span></div>
+<div class="lgrow"><span class="sw" style="background:#185FA5"></span><span class="nm">灵活储蓄</span><span class="ac">16.5%</span><span class="dv" style="color:#2563EB">-3.5pp</span><span class="bx"><span class="axis"></span><span class="mb" style="right:50%;width:7.9px;background:#2563EB"></span></span></div>
 <div class="lgrow"><span class="sw" style="background:#7F77DD"></span><span class="nm">标普500</span><span class="ac">0.6%</span><span class="dv" style="color:#2563EB">-21.4pp</span><span class="bx"><span class="axis"></span><span class="mb" style="right:50%;width:48.6px;background:#2563EB"></span></span></div>
 <div class="lgrow"><span class="sw" style="background:#1D9E75"></span><span class="nm">纳指100</span><span class="ac">0.0%</span><span class="dv" style="color:#2563EB">-10.0pp</span><span class="bx"><span class="axis"></span><span class="mb" style="right:50%;width:22.7px;background:#2563EB"></span></span></div>
-<div class="lgrow"><span class="sw" style="background:#0F6E56"></span><span class="nm">中证A500</span><span class="ac">12.8%</span><span class="dv" style="color:#B45309">+2.8pp</span><span class="bx"><span class="axis"></span><span class="mb" style="left:50%;width:6.4px;background:#B45309"></span></span></div>
-<div class="lgrow"><span class="sw" style="background:#BA7517"></span><span class="nm">红利质量</span><span class="ac">10.3%</span><span class="dv" style="color:#B45309">+6.3pp</span><span class="bx"><span class="axis"></span><span class="mb" style="left:50%;width:14.4px;background:#B45309"></span></span></div>
-<div class="lgrow"><span class="sw" style="background:#B4B2A9"></span><span class="nm">医疗健康</span><span class="ac">7.6%</span><span class="dv" style="color:#B45309">+3.6pp</span><span class="bx"><span class="axis"></span><span class="mb" style="left:50%;width:8.1px;background:#B45309"></span></span></div>
-<div class="lgrow"><span class="sw" style="background:#D4537E"></span><span class="nm">中证消费</span><span class="ac">5.0%</span><span class="dv" style="color:#B45309">+2.0pp</span><span class="bx"><span class="axis"></span><span class="mb" style="left:50%;width:4.5px;background:#B45309"></span></span></div>
-<div class="lgrow"><span class="sw" style="background:#185FA5"></span><span class="nm">债券</span><span class="ac">29.7%</span><span class="dv" style="color:#B45309">+17.7pp</span><span class="bx"><span class="axis"></span><span class="mb" style="left:50%;width:40.2px;background:#B45309"></span></span></div>
-<div class="lgrow"><span class="sw" style="background:#7F77DD"></span><span class="nm">港股恒生科技</span><span class="ac">8.0%</span><span class="dv" style="color:#B45309">+4.0pp</span><span class="bx"><span class="axis"></span><span class="mb" style="left:50%;width:9.2px;background:#B45309"></span></span></div>
-<div class="lgrow"><span class="sw" style="background:#1D9E75"></span><span class="nm">黄金</span><span class="ac">5.6%</span><span class="dv" style="color:#64748B">-0.4pp</span><span class="bx"><span class="axis"></span><span class="mbdot" style="background:#94A3B8"></span></span></div>
+<div class="lgrow"><span class="sw" style="background:#0F6E56"></span><span class="nm">中证A500</span><span class="ac">12.7%</span><span class="dv" style="color:#B45309">+2.7pp</span><span class="bx"><span class="axis"></span><span class="mb" style="left:50%;width:6.1px;background:#B45309"></span></span></div>
+<div class="lgrow"><span class="sw" style="background:#BA7517"></span><span class="nm">红利质量</span><span class="ac">10.4%</span><span class="dv" style="color:#B45309">+6.4pp</span><span class="bx"><span class="axis"></span><span class="mb" style="left:50%;width:14.5px;background:#B45309"></span></span></div>
+<div class="lgrow"><span class="sw" style="background:#B4B2A9"></span><span class="nm">医疗健康</span><span class="ac">7.5%</span><span class="dv" style="color:#B45309">+3.5pp</span><span class="bx"><span class="axis"></span><span class="mb" style="left:50%;width:7.9px;background:#B45309"></span></span></div>
+<div class="lgrow"><span class="sw" style="background:#D4537E"></span><span class="nm">中证消费</span><span class="ac">5.0%</span><span class="dv" style="color:#B45309">+2.0pp</span><span class="bx"><span class="axis"></span><span class="mb" style="left:50%;width:4.6px;background:#B45309"></span></span></div>
+<div class="lgrow"><span class="sw" style="background:#185FA5"></span><span class="nm">债券</span><span class="ac">29.7%</span><span class="dv" style="color:#B45309">+17.7pp</span><span class="bx"><span class="axis"></span><span class="mb" style="left:50%;width:40.1px;background:#B45309"></span></span></div>
+<div class="lgrow"><span class="sw" style="background:#7F77DD"></span><span class="nm">港股恒生科技</span><span class="ac">8.1%</span><span class="dv" style="color:#B45309">+4.1pp</span><span class="bx"><span class="axis"></span><span class="mb" style="left:50%;width:9.4px;background:#B45309"></span></span></div>
+<div class="lgrow"><span class="sw" style="background:#1D9E75"></span><span class="nm">黄金</span><span class="ac">5.5%</span><span class="dv" style="color:#64748B">-0.5pp</span><span class="bx"><span class="axis"></span><span class="mbdot" style="background:#94A3B8"></span></span></div>
 <div class="lgrow"><span class="sw" style="background:#0F6E56"></span><span class="nm">另类投资</span><span class="ac">4.0%</span><span class="dv" style="color:#2563EB">-1.0pp</span><span class="bx"><span class="axis"></span><span class="mb" style="right:50%;width:2.3px;background:#2563EB"></span></span></div>
       </div>
     </div>
@@ -329,7 +329,7 @@
   </div>
   <div class="legend">
     色义：<span style="color:#2563EB">欠配</span>　<span style="color:#B45309">超配</span>　
-    <span style="color:#64748B">|偏离| ≤ 1 个百分点视为达标</span>（用中性灰，避免与「涨」的绿混淆）
+    <span style="color:#64748B">|偏离| ≤ 1 个百分点视为达标</span>（用中性灰，避免与「涨」的红混淆）
   </div>
   </details>
 
@@ -356,19 +356,19 @@
       <th class="sortable" data-col="1" data-type="number">总投入</th><th class="sortable" data-col="2" data-type="number">当前市值</th><th class="sortable" data-col="3" data-type="number">当日盈亏</th><th class="sortable" data-col="4" data-type="number">浮动盈亏</th><th class="sortable" data-col="5" data-type="number">收益率</th>
     </tr></thead>
     <tbody>
-<tr><td class="nm"><span class="fcode">161121</span>易方达中证银行ETF联接（LOF）A</td><td class="num" data-v="100">100.00</td><td class="num" data-v="102.993408">102.99</td><td class="num" data-v="-0.1214"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-0.12%</span></td><td class="num" data-v="2.993408"><span class="bdg" style="background:#E8F5EC;color:#166534">+2.99</span></td><td class="num" data-v="0.02993408"><span class="bdg" style="background:#E8F5EC;color:#166534">+2.99%</span></td></tr>
-<tr><td class="nm"><span class="fcode">017641</span>摩根标普500指数QDII）A</td><td class="num" data-v="50">50.00</td><td class="num" data-v="50.659543">50.66</td><td class="num" data-v="-0.0232"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-0.02%</span></td><td class="num" data-v="0.659542999999999"><span class="bdg" style="background:#E8F5EC;color:#166534">+0.66</span></td><td class="num" data-v="0.01319086"><span class="bdg" style="background:#E8F5EC;color:#166534">+1.32%</span></td></tr>
-<tr><td class="nm"><span class="fcode">006212</span>东方臻选纯债债券A</td><td class="num" data-v="970">970.00</td><td class="num" data-v="974.985604">974.99</td><td class="num" data-v="0.0462"><span class="bdg" style="background:#E8F5EC;color:#166534">+0.05%</span></td><td class="num" data-v="4.98560399999997"><span class="bdg" style="background:#E8F5EC;color:#166534">+4.99</span></td><td class="num" data-v="0.0051397979381443"><span class="bdg" style="background:#E8F5EC;color:#166534">+0.51%</span></td></tr>
-<tr><td class="nm"><span class="fcode">022745</span>博道中证A500指数增强A</td><td class="num" data-v="1092.2">1,092.20</td><td class="num" data-v="1090.455831">1,090.46</td><td class="num" data-v="-1.5770"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-1.58%</span></td><td class="num" data-v="-1.74416899999983"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-1.74</span></td><td class="num" data-v="-0.00159693188060779"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-0.16%</span></td></tr>
-<tr><td class="nm"><span class="fcode">000248</span>汇添富中证主要消费ETF联接A</td><td class="num" data-v="430">430.00</td><td class="num" data-v="424.249584">424.25</td><td class="num" data-v="0.2427"><span class="bdg" style="background:#E8F5EC;color:#166534">+0.24%</span></td><td class="num" data-v="-5.75041600000009"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-5.75</span></td><td class="num" data-v="-0.0133730604651165"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-1.34%</span></td></tr>
-<tr><td class="nm"><span class="fcode">016440</span>华夏中证红利质量ETF联接A</td><td class="num" data-v="900">900.00</td><td class="num" data-v="879.907909">879.91</td><td class="num" data-v="-0.1891"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-0.19%</span></td><td class="num" data-v="-20.0920910000001"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-20.09</span></td><td class="num" data-v="-0.0223245455555557"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-2.23%</span></td></tr>
-<tr><td class="nm"><span class="fcode">110025</span>易方达资源行业混合</td><td class="num" data-v="100">100.00</td><td class="num" data-v="97.61664">97.62</td><td class="num" data-v="-1.3414"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-1.34%</span></td><td class="num" data-v="-2.38336"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-2.38</span></td><td class="num" data-v="-0.0238336"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-2.38%</span></td></tr>
-<tr><td class="nm"><span class="fcode">000216</span>华安黄金ETF联接A</td><td class="num" data-v="485">485.00</td><td class="num" data-v="473.154306">473.15</td><td class="num" data-v="-1.0431"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-1.04%</span></td><td class="num" data-v="-11.845694"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-11.85</span></td><td class="num" data-v="-0.0244241113402063"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-2.44%</span></td></tr>
-<tr><td class="nm"><span class="fcode">013308</span>易方达恒生科技ETF联接（QDII）A</td><td class="num" data-v="705.04">705.04</td><td class="num" data-v="683.64774">683.65</td><td class="num" data-v="0.7934"><span class="bdg" style="background:#E8F5EC;color:#166534">+0.79%</span></td><td class="num" data-v="-21.39226"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-21.39</span></td><td class="num" data-v="-0.0303419096788834"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-3.03%</span></td></tr>
-<tr><td class="nm"><span class="fcode">017730</span>嘉实全球产业升级股票（QDII）A</td><td class="num" data-v="200">200.00</td><td class="num" data-v="192.392194">192.39</td><td class="num" data-v="-0.0599"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-0.06%</span></td><td class="num" data-v="-7.60780600000001"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-7.61</span></td><td class="num" data-v="-0.0380390300000001"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-3.80%</span></td></tr>
-<tr><td class="nm"><span class="fcode">110027</span>易方达安心回报债券A</td><td class="num" data-v="1616">1,616.00</td><td class="num" data-v="1552.08888">1,552.09</td><td class="num" data-v="-1.0610"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-1.06%</span></td><td class="num" data-v="-63.91112"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-63.91</span></td><td class="num" data-v="-0.0395489603960396"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-3.95%</span></td></tr>
-<tr><td class="nm"><span class="fcode">008923</span>建信医疗健康行业股票A</td><td class="num" data-v="688">688.00</td><td class="num" data-v="644.952675">644.95</td><td class="num" data-v="-1.7265"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-1.73%</span></td><td class="num" data-v="-43.0473249999999"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-43.05</span></td><td class="num" data-v="-0.0625687863372092"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-6.26%</span></td></tr>
-<tr><td class="nm"><span class="fcode">001475</span>易方达国防军工混合A</td><td class="num" data-v="150">150.00</td><td class="num" data-v="139.12356">139.12</td><td class="num" data-v="-0.9333"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-0.93%</span></td><td class="num" data-v="-10.87644"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-10.88</span></td><td class="num" data-v="-0.0725096"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-7.25%</span></td></tr>
+<tr><td class="nm"><span class="fcode">161121</span>易方达中证银行ETF联接（LOF）A</td><td class="num" data-v="100">100.00</td><td class="num" data-v="102.868416">102.87</td><td class="num" data-v="-0.1214"><span class="bdg" style="background:#E8F5EC;color:#166534">-0.12%</span></td><td class="num" data-v="2.868416"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">+2.87</span></td><td class="num" data-v="0.02868416"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">+2.87%</span></td></tr>
+<tr><td class="nm"><span class="fcode">017641</span>摩根标普500指数QDII）A</td><td class="num" data-v="50">50.00</td><td class="num" data-v="50.647787">50.65</td><td class="num" data-v="-0.0232"><span class="bdg" style="background:#E8F5EC;color:#166534">-0.02%</span></td><td class="num" data-v="0.647787000000001"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">+0.65</span></td><td class="num" data-v="0.01295574"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">+1.30%</span></td></tr>
+<tr><td class="nm"><span class="fcode">006212</span>东方臻选纯债债券A</td><td class="num" data-v="970">970.00</td><td class="num" data-v="975.435819">975.44</td><td class="num" data-v="0.0462"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">+0.05%</span></td><td class="num" data-v="5.43581899999992"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">+5.44</span></td><td class="num" data-v="0.00560393711340198"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">+0.56%</span></td></tr>
+<tr><td class="nm"><span class="fcode">000248</span>汇添富中证主要消费ETF联接A</td><td class="num" data-v="430">430.00</td><td class="num" data-v="425.279316">425.28</td><td class="num" data-v="0.2427"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">+0.24%</span></td><td class="num" data-v="-4.72068400000006"><span class="bdg" style="background:#E8F5EC;color:#166534">-4.72</span></td><td class="num" data-v="-0.0109783348837211"><span class="bdg" style="background:#E8F5EC;color:#166534">-1.10%</span></td></tr>
+<tr><td class="nm"><span class="fcode">022745</span>博道中证A500指数增强A</td><td class="num" data-v="1092.2">1,092.20</td><td class="num" data-v="1073.259027">1,073.26</td><td class="num" data-v="-1.5770"><span class="bdg" style="background:#E8F5EC;color:#166534">-1.58%</span></td><td class="num" data-v="-18.940973"><span class="bdg" style="background:#E8F5EC;color:#166534">-18.94</span></td><td class="num" data-v="-0.017342037172679"><span class="bdg" style="background:#E8F5EC;color:#166534">-1.73%</span></td></tr>
+<tr><td class="nm"><span class="fcode">013308</span>易方达恒生科技ETF联接（QDII）A</td><td class="num" data-v="705.04">705.04</td><td class="num" data-v="689.07186">689.07</td><td class="num" data-v="0.7934"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">+0.79%</span></td><td class="num" data-v="-15.96814"><span class="bdg" style="background:#E8F5EC;color:#166534">-15.97</span></td><td class="num" data-v="-0.02264855894701"><span class="bdg" style="background:#E8F5EC;color:#166534">-2.26%</span></td></tr>
+<tr><td class="nm"><span class="fcode">016440</span>华夏中证红利质量ETF联接A</td><td class="num" data-v="900">900.00</td><td class="num" data-v="878.24402">878.24</td><td class="num" data-v="-0.1891"><span class="bdg" style="background:#E8F5EC;color:#166534">-0.19%</span></td><td class="num" data-v="-21.7559800000001"><span class="bdg" style="background:#E8F5EC;color:#166534">-21.76</span></td><td class="num" data-v="-0.0241733111111113"><span class="bdg" style="background:#E8F5EC;color:#166534">-2.42%</span></td></tr>
+<tr><td class="nm"><span class="fcode">000216</span>华安黄金ETF联接A</td><td class="num" data-v="485">485.00</td><td class="num" data-v="468.218992">468.22</td><td class="num" data-v="-1.0431"><span class="bdg" style="background:#E8F5EC;color:#166534">-1.04%</span></td><td class="num" data-v="-16.781008"><span class="bdg" style="background:#E8F5EC;color:#166534">-16.78</span></td><td class="num" data-v="-0.0346000164948454"><span class="bdg" style="background:#E8F5EC;color:#166534">-3.46%</span></td></tr>
+<tr><td class="nm"><span class="fcode">110025</span>易方达资源行业混合</td><td class="num" data-v="100">100.00</td><td class="num" data-v="96.3072">96.31</td><td class="num" data-v="-1.3414"><span class="bdg" style="background:#E8F5EC;color:#166534">-1.34%</span></td><td class="num" data-v="-3.69280000000001"><span class="bdg" style="background:#E8F5EC;color:#166534">-3.69</span></td><td class="num" data-v="-0.036928"><span class="bdg" style="background:#E8F5EC;color:#166534">-3.69%</span></td></tr>
+<tr><td class="nm"><span class="fcode">017730</span>嘉实全球产业升级股票（QDII）A</td><td class="num" data-v="200">200.00</td><td class="num" data-v="192.276872">192.28</td><td class="num" data-v="-0.0599"><span class="bdg" style="background:#E8F5EC;color:#166534">-0.06%</span></td><td class="num" data-v="-7.723128"><span class="bdg" style="background:#E8F5EC;color:#166534">-7.72</span></td><td class="num" data-v="-0.03861564"><span class="bdg" style="background:#E8F5EC;color:#166534">-3.86%</span></td></tr>
+<tr><td class="nm"><span class="fcode">110027</span>易方达安心回报债券A</td><td class="num" data-v="1616">1,616.00</td><td class="num" data-v="1535.620906">1,535.62</td><td class="num" data-v="-1.0610"><span class="bdg" style="background:#E8F5EC;color:#166534">-1.06%</span></td><td class="num" data-v="-80.3790940000001"><span class="bdg" style="background:#E8F5EC;color:#166534">-80.38</span></td><td class="num" data-v="-0.0497395383663367"><span class="bdg" style="background:#E8F5EC;color:#166534">-4.97%</span></td></tr>
+<tr><td class="nm"><span class="fcode">008923</span>建信医疗健康行业股票A</td><td class="num" data-v="688">688.00</td><td class="num" data-v="633.817413">633.82</td><td class="num" data-v="-1.7265"><span class="bdg" style="background:#E8F5EC;color:#166534">-1.73%</span></td><td class="num" data-v="-54.1825869999999"><span class="bdg" style="background:#E8F5EC;color:#166534">-54.18</span></td><td class="num" data-v="-0.0787537601744185"><span class="bdg" style="background:#E8F5EC;color:#166534">-7.88%</span></td></tr>
+<tr><td class="nm"><span class="fcode">001475</span>易方达国防军工混合A</td><td class="num" data-v="150">150.00</td><td class="num" data-v="137.82516">137.83</td><td class="num" data-v="-0.9333"><span class="bdg" style="background:#E8F5EC;color:#166534">-0.93%</span></td><td class="num" data-v="-12.17484"><span class="bdg" style="background:#E8F5EC;color:#166534">-12.17</span></td><td class="num" data-v="-0.0811655999999999"><span class="bdg" style="background:#E8F5EC;color:#166534">-8.12%</span></td></tr>
     </tbody>
   </table>
   </details>
@@ -376,7 +376,7 @@
 
   <details>
   <summary>收益趋势</summary>
-  <div class="cap">单日收益率对比：东方财富最新两交易日净值（按单日收益率降序·QDII各自对齐）　月度/累计：月度复盘表　涨绿跌红</div>
+  <div class="cap">单日收益率对比：东方财富最新两交易日净值（按单日收益率降序·QDII各自对齐）　月度/累计：月度复盘表　红涨绿跌</div>
   <div class="panel trend-panel">
     <div class="trend-item"><svg viewBox="0 0 756 340" xmlns="http://www.w3.org/2000/svg" class="trend-svg">
 <text x="378.0" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#0F172A">基金单日收益率对比（按收益率降序）</text>
@@ -392,83 +392,83 @@
 <text x="48" y="48.0" text-anchor="end" font-size="11" fill="#64748B">+0.94%</text>
 <line x1="56" y1="117.0" x2="740" y2="117.0" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="4,3"/>
 <path d="M 82.3,55.1 L 134.9,98.1 L 187.5,113.4 L 240.2,118.9 L 292.8,121.7 L 345.4,126.5 L 398.0,131.8 L 450.6,189.9 L 503.2,198.4 L 555.8,199.8 L 608.5,221.7 L 661.1,240.1 L 713.7,251.8" fill="none" stroke="#94A3B8" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="82.3" cy="55.1" r="4.5" fill="#166534" stroke="#fff" stroke-width="2"/>
-<text x="82.3" y="46.1" text-anchor="middle" font-size="11" font-weight="600" fill="#166534">+0.79%</text>
+<circle cx="82.3" cy="55.1" r="4.5" fill="#B91C1C" stroke="#fff" stroke-width="2"/>
+<text x="82.3" y="46.1" text-anchor="middle" font-size="11" font-weight="600" fill="#B91C1C">+0.79%</text>
 <text x="82.3" y="278.0" text-anchor="middle" font-size="11.5" fill="#475569">恒</text>
 <text x="82.3" y="291.0" text-anchor="middle" font-size="11.5" fill="#475569">生</text>
 <text x="82.3" y="304.0" text-anchor="middle" font-size="11.5" fill="#475569">科</text>
 <text x="82.3" y="317.0" text-anchor="middle" font-size="11.5" fill="#475569">技</text>
-<circle cx="134.9" cy="98.1" r="4.5" fill="#166534" stroke="#fff" stroke-width="2"/>
-<text x="134.9" y="89.1" text-anchor="middle" font-size="11" font-weight="600" fill="#166534">+0.24%</text>
+<circle cx="134.9" cy="98.1" r="4.5" fill="#B91C1C" stroke="#fff" stroke-width="2"/>
+<text x="134.9" y="89.1" text-anchor="middle" font-size="11" font-weight="600" fill="#B91C1C">+0.24%</text>
 <text x="134.9" y="278.0" text-anchor="middle" font-size="11.5" fill="#475569">中</text>
 <text x="134.9" y="291.0" text-anchor="middle" font-size="11.5" fill="#475569">证</text>
 <text x="134.9" y="304.0" text-anchor="middle" font-size="11.5" fill="#475569">消</text>
 <text x="134.9" y="317.0" text-anchor="middle" font-size="11.5" fill="#475569">费</text>
-<circle cx="187.5" cy="113.4" r="4.5" fill="#166534" stroke="#fff" stroke-width="2"/>
-<text x="187.5" y="104.4" text-anchor="middle" font-size="11" font-weight="600" fill="#166534">+0.05%</text>
+<circle cx="187.5" cy="113.4" r="4.5" fill="#B91C1C" stroke="#fff" stroke-width="2"/>
+<text x="187.5" y="104.4" text-anchor="middle" font-size="11" font-weight="600" fill="#B91C1C">+0.05%</text>
 <text x="187.5" y="278.0" text-anchor="middle" font-size="11.5" fill="#475569">臻</text>
 <text x="187.5" y="291.0" text-anchor="middle" font-size="11.5" fill="#475569">选</text>
 <text x="187.5" y="304.0" text-anchor="middle" font-size="11.5" fill="#475569">纯</text>
 <text x="187.5" y="317.0" text-anchor="middle" font-size="11.5" fill="#475569">债</text>
-<circle cx="240.2" cy="118.9" r="4.5" fill="#B91C1C" stroke="#fff" stroke-width="2"/>
-<text x="240.2" y="134.9" text-anchor="middle" font-size="11" font-weight="600" fill="#B91C1C">-0.02%</text>
+<circle cx="240.2" cy="118.9" r="4.5" fill="#166534" stroke="#fff" stroke-width="2"/>
+<text x="240.2" y="134.9" text-anchor="middle" font-size="11" font-weight="600" fill="#166534">-0.02%</text>
 <text x="240.2" y="278.0" text-anchor="middle" font-size="11.5" fill="#475569">标</text>
 <text x="240.2" y="291.0" text-anchor="middle" font-size="11.5" fill="#475569">普</text>
 <text x="240.2" y="304.0" text-anchor="middle" font-size="11.5" fill="#475569">5</text>
 <text x="240.2" y="317.0" text-anchor="middle" font-size="11.5" fill="#475569">0</text>
 <text x="240.2" y="330.0" text-anchor="middle" font-size="11.5" fill="#475569">0</text>
-<circle cx="292.8" cy="121.7" r="4.5" fill="#B91C1C" stroke="#fff" stroke-width="2"/>
-<text x="292.8" y="137.7" text-anchor="middle" font-size="11" font-weight="600" fill="#B91C1C">-0.06%</text>
+<circle cx="292.8" cy="121.7" r="4.5" fill="#166534" stroke="#fff" stroke-width="2"/>
+<text x="292.8" y="137.7" text-anchor="middle" font-size="11" font-weight="600" fill="#166534">-0.06%</text>
 <text x="292.8" y="278.0" text-anchor="middle" font-size="11.5" fill="#475569">嘉</text>
 <text x="292.8" y="291.0" text-anchor="middle" font-size="11.5" fill="#475569">实</text>
 <text x="292.8" y="304.0" text-anchor="middle" font-size="11.5" fill="#475569">全</text>
 <text x="292.8" y="317.0" text-anchor="middle" font-size="11.5" fill="#475569">球</text>
 <text x="292.8" y="330.0" text-anchor="middle" font-size="11.5" fill="#475569">产</text>
 <text x="292.8" y="343.0" text-anchor="middle" font-size="11.5" fill="#475569">业</text>
-<circle cx="345.4" cy="126.5" r="4.5" fill="#B91C1C" stroke="#fff" stroke-width="2"/>
-<text x="345.4" y="142.5" text-anchor="middle" font-size="11" font-weight="600" fill="#B91C1C">-0.12%</text>
+<circle cx="345.4" cy="126.5" r="4.5" fill="#166534" stroke="#fff" stroke-width="2"/>
+<text x="345.4" y="142.5" text-anchor="middle" font-size="11" font-weight="600" fill="#166534">-0.12%</text>
 <text x="345.4" y="278.0" text-anchor="middle" font-size="11.5" fill="#475569">中</text>
 <text x="345.4" y="291.0" text-anchor="middle" font-size="11.5" fill="#475569">证</text>
 <text x="345.4" y="304.0" text-anchor="middle" font-size="11.5" fill="#475569">银</text>
 <text x="345.4" y="317.0" text-anchor="middle" font-size="11.5" fill="#475569">行</text>
-<circle cx="398.0" cy="131.8" r="4.5" fill="#B91C1C" stroke="#fff" stroke-width="2"/>
-<text x="398.0" y="147.8" text-anchor="middle" font-size="11" font-weight="600" fill="#B91C1C">-0.19%</text>
+<circle cx="398.0" cy="131.8" r="4.5" fill="#166534" stroke="#fff" stroke-width="2"/>
+<text x="398.0" y="147.8" text-anchor="middle" font-size="11" font-weight="600" fill="#166534">-0.19%</text>
 <text x="398.0" y="278.0" text-anchor="middle" font-size="11.5" fill="#475569">红</text>
 <text x="398.0" y="291.0" text-anchor="middle" font-size="11.5" fill="#475569">利</text>
 <text x="398.0" y="304.0" text-anchor="middle" font-size="11.5" fill="#475569">质</text>
 <text x="398.0" y="317.0" text-anchor="middle" font-size="11.5" fill="#475569">量</text>
-<circle cx="450.6" cy="189.9" r="4.5" fill="#B91C1C" stroke="#fff" stroke-width="2"/>
-<text x="450.6" y="205.9" text-anchor="middle" font-size="11" font-weight="600" fill="#B91C1C">-0.93%</text>
+<circle cx="450.6" cy="189.9" r="4.5" fill="#166534" stroke="#fff" stroke-width="2"/>
+<text x="450.6" y="205.9" text-anchor="middle" font-size="11" font-weight="600" fill="#166534">-0.93%</text>
 <text x="450.6" y="278.0" text-anchor="middle" font-size="11.5" fill="#475569">国</text>
 <text x="450.6" y="291.0" text-anchor="middle" font-size="11.5" fill="#475569">防</text>
 <text x="450.6" y="304.0" text-anchor="middle" font-size="11.5" fill="#475569">军</text>
 <text x="450.6" y="317.0" text-anchor="middle" font-size="11.5" fill="#475569">工</text>
-<circle cx="503.2" cy="198.4" r="4.5" fill="#B91C1C" stroke="#fff" stroke-width="2"/>
-<text x="503.2" y="214.4" text-anchor="middle" font-size="11" font-weight="600" fill="#B91C1C">-1.04%</text>
+<circle cx="503.2" cy="198.4" r="4.5" fill="#166534" stroke="#fff" stroke-width="2"/>
+<text x="503.2" y="214.4" text-anchor="middle" font-size="11" font-weight="600" fill="#166534">-1.04%</text>
 <text x="503.2" y="278.0" text-anchor="middle" font-size="11.5" fill="#475569">黄</text>
 <text x="503.2" y="291.0" text-anchor="middle" font-size="11.5" fill="#475569">金</text>
-<circle cx="555.8" cy="199.8" r="4.5" fill="#B91C1C" stroke="#fff" stroke-width="2"/>
-<text x="555.8" y="215.8" text-anchor="middle" font-size="11" font-weight="600" fill="#B91C1C">-1.06%</text>
+<circle cx="555.8" cy="199.8" r="4.5" fill="#166534" stroke="#fff" stroke-width="2"/>
+<text x="555.8" y="215.8" text-anchor="middle" font-size="11" font-weight="600" fill="#166534">-1.06%</text>
 <text x="555.8" y="278.0" text-anchor="middle" font-size="11.5" fill="#475569">安</text>
 <text x="555.8" y="291.0" text-anchor="middle" font-size="11.5" fill="#475569">心</text>
 <text x="555.8" y="304.0" text-anchor="middle" font-size="11.5" fill="#475569">回</text>
 <text x="555.8" y="317.0" text-anchor="middle" font-size="11.5" fill="#475569">报</text>
-<circle cx="608.5" cy="221.7" r="4.5" fill="#B91C1C" stroke="#fff" stroke-width="2"/>
-<text x="608.5" y="237.7" text-anchor="middle" font-size="11" font-weight="600" fill="#B91C1C">-1.34%</text>
+<circle cx="608.5" cy="221.7" r="4.5" fill="#166534" stroke="#fff" stroke-width="2"/>
+<text x="608.5" y="237.7" text-anchor="middle" font-size="11" font-weight="600" fill="#166534">-1.34%</text>
 <text x="608.5" y="278.0" text-anchor="middle" font-size="11.5" fill="#475569">资</text>
 <text x="608.5" y="291.0" text-anchor="middle" font-size="11.5" fill="#475569">源</text>
 <text x="608.5" y="304.0" text-anchor="middle" font-size="11.5" fill="#475569">行</text>
 <text x="608.5" y="317.0" text-anchor="middle" font-size="11.5" fill="#475569">业</text>
-<circle cx="661.1" cy="240.1" r="4.5" fill="#B91C1C" stroke="#fff" stroke-width="2"/>
-<text x="661.1" y="256.1" text-anchor="middle" font-size="11" font-weight="600" fill="#B91C1C">-1.58%</text>
+<circle cx="661.1" cy="240.1" r="4.5" fill="#166534" stroke="#fff" stroke-width="2"/>
+<text x="661.1" y="256.1" text-anchor="middle" font-size="11" font-weight="600" fill="#166534">-1.58%</text>
 <text x="661.1" y="278.0" text-anchor="middle" font-size="11.5" fill="#475569">中</text>
 <text x="661.1" y="291.0" text-anchor="middle" font-size="11.5" fill="#475569">证</text>
 <text x="661.1" y="304.0" text-anchor="middle" font-size="11.5" fill="#475569">A</text>
 <text x="661.1" y="317.0" text-anchor="middle" font-size="11.5" fill="#475569">5</text>
 <text x="661.1" y="330.0" text-anchor="middle" font-size="11.5" fill="#475569">0</text>
 <text x="661.1" y="343.0" text-anchor="middle" font-size="11.5" fill="#475569">0</text>
-<circle cx="713.7" cy="251.8" r="4.5" fill="#B91C1C" stroke="#fff" stroke-width="2"/>
-<text x="713.7" y="267.8" text-anchor="middle" font-size="11" font-weight="600" fill="#B91C1C">-1.73%</text>
+<circle cx="713.7" cy="251.8" r="4.5" fill="#166534" stroke="#fff" stroke-width="2"/>
+<text x="713.7" y="267.8" text-anchor="middle" font-size="11" font-weight="600" fill="#166534">-1.73%</text>
 <text x="713.7" y="278.0" text-anchor="middle" font-size="11.5" fill="#475569">医</text>
 <text x="713.7" y="291.0" text-anchor="middle" font-size="11.5" fill="#475569">疗</text>
 <text x="713.7" y="304.0" text-anchor="middle" font-size="11.5" fill="#475569">健</text>
@@ -489,8 +489,8 @@
 <text x="62" y="48.0" text-anchor="end" font-size="11" fill="#64748B">100</text>
 <line x1="70" y1="101.5" x2="796" y2="101.5" stroke="#CBD2DB" stroke-width="1.5" stroke-dasharray="4,3"/>
 <text x="433.0" y="270" text-anchor="middle" font-size="11" fill="#64748B">2026-09</text>
-<circle cx="433.0" cy="232.4" r="4.5" fill="#B91C1C" stroke="#fff" stroke-width="2"/>
-<text x="433.0" y="222.4" text-anchor="middle" font-size="11" font-weight="600" fill="#B91C1C">-227</text>
+<circle cx="433.0" cy="232.4" r="4.5" fill="#166534" stroke="#fff" stroke-width="2"/>
+<text x="433.0" y="222.4" text-anchor="middle" font-size="11" font-weight="600" fill="#166534">-227</text>
 </svg></div>
       <div class="trend-item"><svg viewBox="0 0 820 300" xmlns="http://www.w3.org/2000/svg" class="trend-svg">
 <text x="410.0" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#0F172A">累计收益趋势</text>
@@ -506,8 +506,8 @@
 <text x="62" y="48.0" text-anchor="end" font-size="11" fill="#64748B">100</text>
 <line x1="70" y1="101.5" x2="796" y2="101.5" stroke="#CBD2DB" stroke-width="1.5" stroke-dasharray="4,3"/>
 <text x="433.0" y="270" text-anchor="middle" font-size="11" fill="#64748B">2026-09</text>
-<circle cx="433.0" cy="232.4" r="4.5" fill="#B91C1C" stroke="#fff" stroke-width="2"/>
-<text x="433.0" y="222.4" text-anchor="middle" font-size="11" font-weight="600" fill="#B91C1C">-227</text>
+<circle cx="433.0" cy="232.4" r="4.5" fill="#166534" stroke="#fff" stroke-width="2"/>
+<text x="433.0" y="222.4" text-anchor="middle" font-size="11" font-weight="600" fill="#166534">-227</text>
 </svg></div>
     </div>
   </div>
@@ -518,13 +518,13 @@
     <table>
       <thead><tr><th>名称</th><th>已实现收益</th></tr></thead>
       <tbody>
-<tr><td class="nm"><span class="fcode">017086</span>嘉实ESG可持续投资混合A</td><td class="num"><span class="bdg" style="background:#E8F5EC;color:#166534">+0.42</span></td></tr>
-<tr><td class="nm"><span class="fcode">019240</span>华泰柏瑞中证1000指数增强A</td><td class="num"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-13.78</span></td></tr>
-<tr><td class="nm"><span class="fcode">017103</span>大摩数字经济混合C</td><td class="num"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-22.09</span></td></tr>
-<tr><td class="nm"><span class="fcode">001214</span>华泰柏瑞中证500ETF联接A</td><td class="num"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-41.65</span></td></tr>
-<tr><td class="nm"><span class="fcode">007044</span>博道沪深300指数增强A</td><td class="num"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-45.81</span></td></tr>
-<tr><td class="nm"><span class="fcode">460300</span>华泰柏瑞沪深300ETF联接A</td><td class="num"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-46.84</span></td></tr>
-<tr><td class="nm"><span class="fcode">006593</span>博道中证500指数增强A</td><td class="num"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">-57.80</span></td></tr>
+<tr><td class="nm"><span class="fcode">017086</span>嘉实ESG可持续投资混合A</td><td class="num"><span class="bdg" style="background:#FBEAE7;color:#B91C1C">+0.42</span></td></tr>
+<tr><td class="nm"><span class="fcode">019240</span>华泰柏瑞中证1000指数增强A</td><td class="num"><span class="bdg" style="background:#E8F5EC;color:#166534">-13.78</span></td></tr>
+<tr><td class="nm"><span class="fcode">017103</span>大摩数字经济混合C</td><td class="num"><span class="bdg" style="background:#E8F5EC;color:#166534">-22.09</span></td></tr>
+<tr><td class="nm"><span class="fcode">001214</span>华泰柏瑞中证500ETF联接A</td><td class="num"><span class="bdg" style="background:#E8F5EC;color:#166534">-41.65</span></td></tr>
+<tr><td class="nm"><span class="fcode">007044</span>博道沪深300指数增强A</td><td class="num"><span class="bdg" style="background:#E8F5EC;color:#166534">-45.81</span></td></tr>
+<tr><td class="nm"><span class="fcode">460300</span>华泰柏瑞沪深300ETF联接A</td><td class="num"><span class="bdg" style="background:#E8F5EC;color:#166534">-46.84</span></td></tr>
+<tr><td class="nm"><span class="fcode">006593</span>博道中证500指数增强A</td><td class="num"><span class="bdg" style="background:#E8F5EC;color:#166534">-57.80</span></td></tr>
       </tbody>
     </table>
   </details>
@@ -543,7 +543,7 @@
   </details>
 
   <div class="foot">
-    <b>涨＝浅绿底＋深绿字，跌＝浅红底＋深红字</b>（个人习惯，与 A 股「涨红跌绿」相反）｜金额单位：人民币元｜生成时间 2026-10-14 22:51<br>
+    <b>涨＝浅红底＋深红字，跌＝浅绿底＋深绿字</b>（A 股习惯：红涨绿跌）｜金额单位：人民币元｜生成时间 2026-10-14 23:24<br>
     本快照为账面数据，非交易确认值；净值以基金公司公布为准，不构成买卖建议。
   </div>
 </div>
@@ -590,8 +590,8 @@
 (function(){
   var box=document.getElementById('hdist');
   if(!box)return;
-  var DATA=[{"code": "110027", "short": "安心回报", "cat": "债券", "inv": 1616, "mv": 1552.09, "pnl": -63.91, "pct": -3.95}, {"code": "006212", "short": "臻选纯债", "cat": "债券", "inv": 970, "mv": 974.99, "pnl": 4.99, "pct": 0.51}, {"code": "016440", "short": "红利质量", "cat": "A股", "inv": 900, "mv": 879.91, "pnl": -20.09, "pct": -2.23}, {"code": "013308", "short": "恒生科技", "cat": "港股", "inv": 705.04, "mv": 683.65, "pnl": -21.39, "pct": -3.03}, {"code": "008923", "short": "医疗健康", "cat": "A股", "inv": 688, "mv": 644.95, "pnl": -43.05, "pct": -6.26}, {"code": "000216", "short": "黄金", "cat": "黄金", "inv": 485, "mv": 473.15, "pnl": -11.85, "pct": -2.44}, {"code": "000248", "short": "中证消费", "cat": "A股", "inv": 430, "mv": 424.25, "pnl": -5.75, "pct": -1.34}, {"code": "017730", "short": "嘉实全球产业", "cat": "另类投资", "inv": 200, "mv": 192.39, "pnl": -7.61, "pct": -3.8}, {"code": "161121", "short": "中证银行", "cat": "另类投资", "inv": 100, "mv": 102.99, "pnl": 2.99, "pct": 2.99}, {"code": "001475", "short": "国防军工", "cat": "另类投资", "inv": 150, "mv": 139.12, "pnl": -10.88, "pct": -7.25}, {"code": "017641", "short": "标普500", "cat": "标普", "inv": 50, "mv": 50.66, "pnl": 0.66, "pct": 1.32}, {"code": "110025", "short": "资源行业", "cat": "另类投资", "inv": 100, "mv": 97.62, "pnl": -2.38, "pct": -2.38}, {"code": "022745", "short": "中证A500", "cat": "A股", "inv": 1092.2, "mv": 1090.46, "pnl": -1.74, "pct": -0.16}];
-  var TOTAL=7306.23;
+  var DATA=[{"code": "110027", "short": "安心回报", "cat": "债券", "inv": 1616, "mv": 1535.62, "pnl": -80.38, "pct": -4.97}, {"code": "006212", "short": "臻选纯债", "cat": "债券", "inv": 970, "mv": 975.44, "pnl": 5.44, "pct": 0.56}, {"code": "016440", "short": "红利质量", "cat": "A股", "inv": 900, "mv": 878.24, "pnl": -21.76, "pct": -2.42}, {"code": "013308", "short": "恒生科技", "cat": "港股", "inv": 705.04, "mv": 689.07, "pnl": -15.97, "pct": -2.26}, {"code": "008923", "short": "医疗健康", "cat": "A股", "inv": 688, "mv": 633.82, "pnl": -54.18, "pct": -7.88}, {"code": "000216", "short": "黄金", "cat": "黄金", "inv": 485, "mv": 468.22, "pnl": -16.78, "pct": -3.46}, {"code": "000248", "short": "中证消费", "cat": "A股", "inv": 430, "mv": 425.28, "pnl": -4.72, "pct": -1.1}, {"code": "017730", "short": "嘉实全球产业", "cat": "另类投资", "inv": 200, "mv": 192.28, "pnl": -7.72, "pct": -3.86}, {"code": "161121", "short": "中证银行", "cat": "另类投资", "inv": 100, "mv": 102.87, "pnl": 2.87, "pct": 2.87}, {"code": "001475", "short": "国防军工", "cat": "另类投资", "inv": 150, "mv": 137.83, "pnl": -12.17, "pct": -8.12}, {"code": "017641", "short": "标普500", "cat": "标普", "inv": 50, "mv": 50.65, "pnl": 0.65, "pct": 1.3}, {"code": "110025", "short": "资源行业", "cat": "另类投资", "inv": 100, "mv": 96.31, "pnl": -3.69, "pct": -3.69}, {"code": "022745", "short": "中证A500", "cat": "A股", "inv": 1092.2, "mv": 1073.26, "pnl": -18.94, "pct": -1.73}];
+  var TOTAL=7258.89;
   var CATCOL={'债券':'#185FA5','A股':'#1D9E75','港股':'#7F77DD','黄金':'#BA7517',
               '另类投资':'#D4537E','标普':'#0F6E56','纳指':'#0F6E56'};
   var cat='全部',sortK='mv';
@@ -634,12 +634,12 @@
     document.getElementById('hd-sum').innerHTML=
       '当前显示 <b>'+arr.length+'</b> 只 · 市值 <b>'+fmt(sum)+' 元</b>'
       +'（占总持仓 '+(sum/TOTAL*100).toFixed(1)+'%） · 浮动盈亏 '
-      +'<b style="color:'+(sumPnl>=0?'#166534':'#B91C1C')+'">'+(sumPnl>=0?'+':'')+sumPnl.toFixed(2)+' 元</b>';
+      +'<b style="color:'+(sumPnl>=0?'#B91C1C':'#166534')+'">'+(sumPnl>=0?'+':'')+sumPnl.toFixed(2)+' 元</b>';
     var chart=document.getElementById('hd-chart');chart.innerHTML='';
     arr.forEach(function(d){
       var w=Math.max(1.5,Math.abs(d[sortK])/denom*100);
       var col=CATCOL[d.cat]||'#94A3B8';
-      var pc2=d.pct>0?'#166534':(d.pct<0?'#B91C1C':'#64748B');
+      var pc2=d.pct>0?'#B91C1C':(d.pct<0?'#166534':'#64748B');
       var row=document.createElement('div');row.className='hrow';
       row.innerHTML='<div class="hname" title="'+esc(d.code)+'">'+esc(d.short)+'</div>'
         +'<div class="htrack"><div class="hbar" style="width:'+w.toFixed(1)+'%;background:'+col+'"></div></div>'
