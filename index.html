@@ -214,6 +214,15 @@
   .foot b{color:var(--t2);font-weight:500}
   .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
            clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  /* 桌面：指标卡固定一排 6 个（2026-10-16 用户要求）。
+     不能用 auto-fit：容器实宽不足 1100px 时会自动降成 5 列，第 6 张掉到第二行。 */
+  @media (min-width:861px){
+    .cards{grid-template-columns:repeat(6,1fr)}
+    .c{padding:10px 10px}
+    .c .l{font-size:11px}
+    .c .v{font-size:17px}
+    .c .s{font-size:10px;line-height:1.45}
+  }
   @media (max-width:860px){
     .col-cat,.col-nav,.col-sh,.col-date{display:none}
     /* ⚠️ 不能压太窄：副行自然宽度 156~188px，压到 150 会被 ellipsis 吃掉「还差 x.xxpp」 */
@@ -556,7 +565,7 @@
   </details>
 
   <div class="foot">
-    <b>涨＝浅红底＋深红字，跌＝浅绿底＋深绿字</b>（A 股习惯：红涨绿跌）｜金额单位：人民币元｜生成时间 2026-10-16 01:04<br>
+    <b>涨＝浅红底＋深红字，跌＝浅绿底＋深绿字</b>（A 股习惯：红涨绿跌）｜金额单位：人民币元｜生成时间 2026-10-16 01:06<br>
     本快照为账面数据，非交易确认值；净值以基金公司公布为准，不构成买卖建议。
   </div>
 </div>
