@@ -118,7 +118,7 @@
   .swk.tgt{background:#94A3B8;margin-left:14px}
   .abrow{display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid var(--border)}
   .abrow:last-child{border-bottom:0}
-  .abnm{width:72px;flex:none;font-size:11.5px;color:var(--t1);
+  .abnm{width:68px;flex:none;font-size:11.5px;color:var(--t1);
         white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .ablines{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px}
   .abline{display:flex;align-items:center;gap:6px}
@@ -126,7 +126,9 @@
   .abf{display:block;height:100%;border-radius:2px}
   .abf.act{background:#185FA5}
   .abf.tgt{background:#94A3B8}
-  .abv{flex:none;width:42px;text-align:right;font-size:10.5px;color:var(--t2);font-style:normal}
+  .abv{flex:none;width:40px;text-align:right;font-size:10.5px;color:var(--t2);font-style:normal}
+  .abdev{flex:none;width:52px;text-align:right;font-size:10.5px;line-height:1.15;
+         font-variant-numeric:tabular-nums;font-feature-settings:"tnum" 1}
   .lgs{flex:1;min-width:290px}
   .lghd,.lgrow{display:flex;align-items:center;gap:10px}
   .lghd{align-items:center;padding-bottom:6px;border-bottom:1px solid var(--border-strong)}
@@ -306,20 +308,21 @@
   <details>
   <summary>配置占比 vs 目标</summary>
   <div class="cap">每类上条＝实际占比、下条＝目标占比，共用同一横轴刻度（0 ~ 30 个百分点）。<br>
-    按目标占比降序排列，两条的长度差就是超配／欠配幅度。</div>
+    最右列为偏离（实际 − 目标，单位：个百分点 pp）；蓝＝欠配、橙＝超配、灰＝达标（|偏离| ≤ 1pp）。<br>
+    按目标占比降序排列。</div>
   <div class="panel">
     <div class="alloc">
-      <div class="abars"><div class="abahd"><span class="swk act"></span>实际占比<span class="swk tgt"></span>目标占比</div><div class="abrow"><div class="abnm">标普500</div><div class="ablines"><div class="abline"><span class="abtrack"><i class="abf act" style="width:3.1%"></i></span><em class="abv">0.9%</em></div><div class="abline"><span class="abtrack"><i class="abf tgt" style="width:73.3%"></i></span><em class="abv">22.0%</em></div></div></div>
-<div class="abrow"><div class="abnm">灵活储蓄</div><div class="ablines"><div class="abline"><span class="abtrack"><i class="abf act" style="width:53.6%"></i></span><em class="abv">16.1%</em></div><div class="abline"><span class="abtrack"><i class="abf tgt" style="width:66.7%"></i></span><em class="abv">20.0%</em></div></div></div>
-<div class="abrow"><div class="abnm">债券</div><div class="ablines"><div class="abline"><span class="abtrack"><i class="abf act" style="width:96.1%"></i></span><em class="abv">28.8%</em></div><div class="abline"><span class="abtrack"><i class="abf tgt" style="width:40.0%"></i></span><em class="abv">12.0%</em></div></div></div>
-<div class="abrow"><div class="abnm">纳指100</div><div class="ablines"><div class="abline"><span class="abtrack"><i class="abf act" style="width:1.5%"></i></span><em class="abv">0.4%</em></div><div class="abline"><span class="abtrack"><i class="abf tgt" style="width:33.3%"></i></span><em class="abv">10.0%</em></div></div></div>
-<div class="abrow"><div class="abnm">中证A500</div><div class="ablines"><div class="abline"><span class="abtrack"><i class="abf act" style="width:41.1%"></i></span><em class="abv">12.3%</em></div><div class="abline"><span class="abtrack"><i class="abf tgt" style="width:33.3%"></i></span><em class="abv">10.0%</em></div></div></div>
-<div class="abrow"><div class="abnm">黄金</div><div class="ablines"><div class="abline"><span class="abtrack"><i class="abf act" style="width:17.9%"></i></span><em class="abv">5.4%</em></div><div class="abline"><span class="abtrack"><i class="abf tgt" style="width:20.0%"></i></span><em class="abv">6.0%</em></div></div></div>
-<div class="abrow"><div class="abnm">另类投资</div><div class="ablines"><div class="abline"><span class="abtrack"><i class="abf act" style="width:20.3%"></i></span><em class="abv">6.1%</em></div><div class="abline"><span class="abtrack"><i class="abf tgt" style="width:16.7%"></i></span><em class="abv">5.0%</em></div></div></div>
-<div class="abrow"><div class="abnm">红利低波</div><div class="ablines"><div class="abline"><span class="abtrack"><i class="abf act" style="width:33.1%"></i></span><em class="abv">9.9%</em></div><div class="abline"><span class="abtrack"><i class="abf tgt" style="width:13.3%"></i></span><em class="abv">4.0%</em></div></div></div>
-<div class="abrow"><div class="abnm">医疗健康</div><div class="ablines"><div class="abline"><span class="abtrack"><i class="abf act" style="width:24.3%"></i></span><em class="abv">7.3%</em></div><div class="abline"><span class="abtrack"><i class="abf tgt" style="width:13.3%"></i></span><em class="abv">4.0%</em></div></div></div>
-<div class="abrow"><div class="abnm">港股恒生科技</div><div class="ablines"><div class="abline"><span class="abtrack"><i class="abf act" style="width:26.4%"></i></span><em class="abv">7.9%</em></div><div class="abline"><span class="abtrack"><i class="abf tgt" style="width:13.3%"></i></span><em class="abv">4.0%</em></div></div></div>
-<div class="abrow"><div class="abnm">中证消费</div><div class="ablines"><div class="abline"><span class="abtrack"><i class="abf act" style="width:16.3%"></i></span><em class="abv">4.9%</em></div><div class="abline"><span class="abtrack"><i class="abf tgt" style="width:10.0%"></i></span><em class="abv">3.0%</em></div></div></div></div>
+      <div class="abars"><div class="abahd"><span class="swk act"></span>实际占比<span class="swk tgt"></span>目标占比</div><div class="abrow"><div class="abnm">标普500</div><div class="ablines"><div class="abline"><span class="abtrack"><i class="abf act" style="width:3.1%"></i></span><em class="abv">0.9%</em></div><div class="abline"><span class="abtrack"><i class="abf tgt" style="width:73.3%"></i></span><em class="abv">22.0%</em></div></div><div class="abdev" style="color:#2563EB">-21.1pp</div></div>
+<div class="abrow"><div class="abnm">灵活储蓄</div><div class="ablines"><div class="abline"><span class="abtrack"><i class="abf act" style="width:53.6%"></i></span><em class="abv">16.1%</em></div><div class="abline"><span class="abtrack"><i class="abf tgt" style="width:66.7%"></i></span><em class="abv">20.0%</em></div></div><div class="abdev" style="color:#2563EB">-3.9pp</div></div>
+<div class="abrow"><div class="abnm">债券</div><div class="ablines"><div class="abline"><span class="abtrack"><i class="abf act" style="width:96.1%"></i></span><em class="abv">28.8%</em></div><div class="abline"><span class="abtrack"><i class="abf tgt" style="width:40.0%"></i></span><em class="abv">12.0%</em></div></div><div class="abdev" style="color:#B45309">+16.8pp</div></div>
+<div class="abrow"><div class="abnm">纳指100</div><div class="ablines"><div class="abline"><span class="abtrack"><i class="abf act" style="width:1.5%"></i></span><em class="abv">0.4%</em></div><div class="abline"><span class="abtrack"><i class="abf tgt" style="width:33.3%"></i></span><em class="abv">10.0%</em></div></div><div class="abdev" style="color:#2563EB">-9.6pp</div></div>
+<div class="abrow"><div class="abnm">中证A500</div><div class="ablines"><div class="abline"><span class="abtrack"><i class="abf act" style="width:41.1%"></i></span><em class="abv">12.3%</em></div><div class="abline"><span class="abtrack"><i class="abf tgt" style="width:33.3%"></i></span><em class="abv">10.0%</em></div></div><div class="abdev" style="color:#B45309">+2.3pp</div></div>
+<div class="abrow"><div class="abnm">黄金</div><div class="ablines"><div class="abline"><span class="abtrack"><i class="abf act" style="width:17.9%"></i></span><em class="abv">5.4%</em></div><div class="abline"><span class="abtrack"><i class="abf tgt" style="width:20.0%"></i></span><em class="abv">6.0%</em></div></div><div class="abdev" style="color:#64748B">-0.6pp</div></div>
+<div class="abrow"><div class="abnm">另类投资</div><div class="ablines"><div class="abline"><span class="abtrack"><i class="abf act" style="width:20.3%"></i></span><em class="abv">6.1%</em></div><div class="abline"><span class="abtrack"><i class="abf tgt" style="width:16.7%"></i></span><em class="abv">5.0%</em></div></div><div class="abdev" style="color:#B45309">+1.1pp</div></div>
+<div class="abrow"><div class="abnm">红利低波</div><div class="ablines"><div class="abline"><span class="abtrack"><i class="abf act" style="width:33.1%"></i></span><em class="abv">9.9%</em></div><div class="abline"><span class="abtrack"><i class="abf tgt" style="width:13.3%"></i></span><em class="abv">4.0%</em></div></div><div class="abdev" style="color:#B45309">+5.9pp</div></div>
+<div class="abrow"><div class="abnm">医疗健康</div><div class="ablines"><div class="abline"><span class="abtrack"><i class="abf act" style="width:24.3%"></i></span><em class="abv">7.3%</em></div><div class="abline"><span class="abtrack"><i class="abf tgt" style="width:13.3%"></i></span><em class="abv">4.0%</em></div></div><div class="abdev" style="color:#B45309">+3.3pp</div></div>
+<div class="abrow"><div class="abnm">港股恒生科技</div><div class="ablines"><div class="abline"><span class="abtrack"><i class="abf act" style="width:26.4%"></i></span><em class="abv">7.9%</em></div><div class="abline"><span class="abtrack"><i class="abf tgt" style="width:13.3%"></i></span><em class="abv">4.0%</em></div></div><div class="abdev" style="color:#B45309">+3.9pp</div></div>
+<div class="abrow"><div class="abnm">中证消费</div><div class="ablines"><div class="abline"><span class="abtrack"><i class="abf act" style="width:16.3%"></i></span><em class="abv">4.9%</em></div><div class="abline"><span class="abtrack"><i class="abf tgt" style="width:10.0%"></i></span><em class="abv">3.0%</em></div></div><div class="abdev" style="color:#B45309">+1.9pp</div></div></div>
     </div>
 
   </div>
@@ -548,7 +551,7 @@
   </details>
 
   <div class="foot">
-    <b>涨＝浅红底＋深红字，跌＝浅绿底＋深绿字</b>（A 股习惯：红涨绿跌）｜金额单位：人民币元｜生成时间 2026-10-15 20:30<br>
+    <b>涨＝浅红底＋深红字，跌＝浅绿底＋深绿字</b>（A 股习惯：红涨绿跌）｜金额单位：人民币元｜生成时间 2026-10-15 20:35<br>
     本快照为账面数据，非交易确认值；净值以基金公司公布为准，不构成买卖建议。
   </div>
 </div>
