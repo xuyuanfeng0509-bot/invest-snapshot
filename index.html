@@ -265,14 +265,19 @@
   <div class="cards">
     <div class="c"><div class="l">持有投入</div><div class="v">¥7,516.09</div><div class="s">15 只在持</div></div>
     <div class="c"><div class="l">当前市值</div><div class="v">¥7,226.06</div></div>
-    <div class="c"><div class="l">持有浮盈亏</div><div class="v" style="color:#166534">-¥290.03</div><div class="s">-3.86%</div></div>
+    <div class="c"><div class="l">持有浮盈亏</div><div class="v" style="color:#166534">-¥290.03</div><div class="s">浮动盈亏（元）</div></div>
+    <div class="c"><div class="l">持有收益率</div><div class="v" style="color:#166534">-3.86%</div><div class="s">浮盈亏 ÷ 持有投入</div></div>
     <div class="c"><div class="l">累计总收益</div><div class="v" style="color:#166534">-¥539.34</div><div class="s">持有＋已清仓</div></div>
+    <div class="c"><div class="l">累计收益率</div><div class="v" style="color:#166534">-6.95%</div><div class="s">累计总收益 ÷ 历史总投入</div></div>
   </div>
 
   <div class="note">
     <b>口径说明</b>：表格「基金持仓表」合计行（当前第 38 行，一律按 A 列含「合计」动态定位）：I 列（持有浮盈亏）<code>=SUM(I3:I37)</code>，N 列（已清仓已实现）<code>=SUM(N3:N37)</code>，Q 列（累计总收益）<code>=I38+N38</code>，
     即<b>持有浮盈亏 + 已清仓收益 = 累计总收益</b>（-¥539.34）。当前持有的浮亏为 -¥290.03（-3.86%），
-    已清仓 8 只的已实现损益见下方折叠区。
+    已清仓 8 只的已实现损益见下方折叠区。<br>
+    <b>两个收益率的分母不同</b>：<b>持有收益率 -3.86%</b> = 持有浮盈亏 ÷ 持有投入（¥7,516.09），衡量<b>现在还在手里的仓位</b>；
+    <b>累计收益率 -6.95%</b> = 累计总收益 ÷ 历史总投入（¥7,765.40，表格 F38 = 持有投入 + 已清仓投入），衡量<b>开户至今的全部战绩</b>，与表格 R38 同口径。
+    累计收益率低于持有收益率是正常的：已清仓那部分亏损不会因为卖出而消失。
   </div>
 
   <details>
@@ -552,7 +557,7 @@
   </details>
 
   <div class="foot">
-    <b>涨＝浅红底＋深红字，跌＝浅绿底＋深绿字</b>（A 股习惯：红涨绿跌）｜金额单位：人民币元｜生成时间 2026-10-15 23:22<br>
+    <b>涨＝浅红底＋深红字，跌＝浅绿底＋深绿字</b>（A 股习惯：红涨绿跌）｜金额单位：人民币元｜生成时间 2026-10-16 01:02<br>
     本快照为账面数据，非交易确认值；净值以基金公司公布为准，不构成买卖建议。
   </div>
 </div>
